@@ -42,7 +42,7 @@ button:hover{
   }
   .abaixo{
     position: absolute;
-    bottom: 300px;
+    bottom: -300px;
   }
   footer{
     text-align: center;
