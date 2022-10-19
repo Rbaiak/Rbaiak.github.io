@@ -36,26 +36,13 @@ button{
 button:hover{
     background-color: plum;
 }
-.loader{
-    animation: is-rotating 1s infinite;
-    width: 50px;
-    height:50px;
-    border: 6px solid #e5e5e5;
-    border-radius:50%;
-    border-top-color: #51d4db;
-  }
-  @keyframes is-rotating{
-    to{
-      transform: rotate(1turn)
-    }
-  }
 
   .hidden{
     display: none;
   }
   .abaixo{
     position: absolute;
-    bottom: 200px;
+    bottom: 300px;
   }
   footer{
     text-align: center;
