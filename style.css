@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cinzel+Decorative&family=Handlee&family=Luckiest+Guy&family=Montserrat:wght@300;400;700&display=swap');
+
+body{
+    background: rgb(161,212,255);
+    background: linear-gradient(90deg, rgba(161,212,255,1) 0%, rgba(255,205,199,1) 100%, rgba(0,0,0,1) 100%);
+    font-family: 'Handlee', cursive;
+}
+header{
+    text-align: center;
+    color: darkslateblue;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+}
+.advice{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+}
+button{
+    height: 100px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border: none;
+    transition: 0.5s ease-in-out;
+    background-color: #9cddde;
+    color: darkslateblue;
+    font-family: 'Handlee', cursive;
+}
+button:hover{
+    background-color: plum;
+}
+.loader{
+    animation: is-rotating 1s infinite;
+    width: 50px;
+    height:50px;
+    border: 6px solid #e5e5e5;
+    border-radius:50%;
+    border-top-color: #51d4db;
+  }
+  @keyframes is-rotating{
+    to{
+      transform: rotate(1turn)
+    }
+  }
+
+  .hidden{
+    display: none;
+  }
+  .abaixo{
+    position: absolute;
+    bottom: 200px;
+  }
+  footer{
+    text-align: center;
+    font-size: 1.2rem;
+  }
