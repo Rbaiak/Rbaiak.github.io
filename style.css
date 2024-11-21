@@ -1,0 +1,120 @@
+body{
+    background-color: #16423C;
+    color: #C4DAD2;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #6A9C89;
+
+}
+
+li:hover{
+    transition: 0.5s;
+    background-color: antiquewhite;
+    border-radius: 30%;
+}
+.inicio{
+    margin: 20px;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+
+}
+.mapa{
+    width: 700px;
+    height: 300px;
+    margin: 50px;
+}
+.foot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    background-color: #6A9C89;
+    justify-content: center;
+}
+
+.foot li {
+    margin-bottom: 5px;
+}
+
+.credit {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Espaço acima do texto 'Desenvolvido por Rb' */
+}
+
+.impactos1{
+    margin: 0 auto;
+    height: 400px;
+    width: 700px;
+    padding: 10px;
+}
+p{
+    padding-left: 5px;
+    text-align: justify;
+}
+
+.meio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.lista_participantes{
+    margin: 10px;
+
+}
+
+/* Tablet (largura máxima: 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Tablet (largura máxima: 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Celular (largura máxima: 480px) */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
