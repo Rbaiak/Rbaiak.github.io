@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto da Indústria Têxtil</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <div class="logo_container">
+                <img class="logo" src="./assets/logo-removebg-preview.png" alt="Impacto da moda no meio ambiente">
+                <h1>Impacto da Indústria Têxtil</h1>
+            </div>
+            <h2>Pra onde vai a roupa quando sai de moda?</h2>
+        </div>
+        <div class="menus">
+            <nav>
+                <ul class="lista">
+                    <li class="inicio"><a href="index.html">Início</a></li>
+                    <li class="inicio"><a href="impactos.html">Impactos Ambientais</a></li>
+                    <li class="inicio"><a href="ciclo de vida.html">Ciclo de Vida</a></li>
+                    <li class="inicio"><a href="solucoes.html">Soluções Sustentáveis</a></li>
+                    <li class="inicio"><a href="calc.html">Calculadora</a></li>
+                    <li class="inicio"><a href="quiz.html">Quizz</a></li>
+                    <li class="inicio"><a href="avalie.html">Avalie-nos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="conteudo meio">
+        <h2>O Preço da Moda</h2>
+        <p>
+            O preço da moda vai além do valor monetário das peças e reflete os custos ambientais e sociais envolvidos em sua produção. Como podemos mudar isso?
+        </p>
+        <img class="impactos1" src="./assets/gala.jfif" alt="Impactos da moda no meio ambiente">
+        <button id="saiba">Saiba Mais</button>
+        <div class="hidden" id="esconder">
+            <p>
+                A indústria da moda rápida contribui significativamente para a poluição, o desperdício de recursos e condições de trabalho precárias.
+                Promover práticas éticas e sustentáveis é fundamental para reduzir esse impacto.
+            </p>
+            <video src="./assets/video.mp4" controls></video>
+        </div>
+    </main>
+    <footer class="pe">
+        <div class="rodape">
+            <ul class="foot">
+                <li>
+                    <h3 class="sobre"><a href="grupo.html" target="_blank">Sobre</a></h3>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        // Alterar visibilidade do conteúdo
+        const saibaMais = document.getElementById("saiba");
+        const esconder = document.getElementById("esconder");
+
+        saibaMais.addEventListener("click", () => {
+            if (esconder.style.display === "none" || !esconder.style.display) {
+                esconder.style.display = "block";
+                saibaMais.innerText = "Mostrar Menos";
+            } else {
+                esconder.style.display = "none";
+                saibaMais.innerText = "Saiba Mais";
+            }
+        });
+    </script>
+</body>
+</html>

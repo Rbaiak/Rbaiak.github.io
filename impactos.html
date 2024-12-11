@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impactos Ambientais</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <div class="logo_container">
+                <img class="logo" src="./assets/logo-removebg-preview.png" alt="Impacto da moda no meio ambiente">
+                <h1>Impacto da Indústria Têxtil</h1>
+            </div>
+            <h2>entenda como isso afeta o meio ambiente</h2>
+        </div>
+            <div class="menus">
+                <nav>
+                    <ul class="lista">
+                        <li class="inicio">
+                            <a href="index.html">Início</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="impactos.html">Impactos Ambientais</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="ciclo de vida.html">Ciclo de Vida</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="solucoes.html">Soluções sustentáveis</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="calc.html">Calculadora</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="quiz.html">Quizz</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="avalie.html">Avalie-nos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main class="conteudo">
+        <p>
+            O que acontece com as roupas que compramos e descartamos com tanta facilidade?
+
+        </p>
+            <img class="impactos1" src="./assets/impactos1.png" alt="">
+            <button id="saiba">Saiba Mais</button>
+
+            <div class="hidden" id="esconder">
+            <p>
+            A moda rápida, ou fast fashion, nos incentiva a estar sempre em dia com as últimas
+            tendências, mas você já pensou no preço real disso? Não o preço que pagamos na
+            loja, mas o custo para o planeta?
+            Imagine o Deserto do Atacama, um lugar único no mundo, agora coberto por
+            montanhas de roupas jogadas fora, vindas de todo o mundo. Roupas que, muitas
+            vezes, usamos pouquíssimo. É assustador pensar que peças de roupa descartáveis
+            estão transformando um dos lugares mais bonitos e isolados do planeta em um lixão
+            tóxico. E cada vez que compramos sem pensar, estamos alimentando essa
+            destruição
+        </p>
+        <img class="impactos1" src="./assets/impactos2.png" alt="">
+
+
+        <p>
+            Agora, reflita sobre o que significa uma simples camiseta. Para produzi-la, são
+            necessários milhares de litros de água e, enquanto isso, há pessoas e animais que
+            mal têm acesso a água limpa. Os produtos químicos usados para dar cor e textura
+            aos tecidos acabam nos rios, matando peixes e envenenando as águas. Esses
+            mesmos rios que deveriam sustentar a vida estão sendo transformados em canais de
+            poluição.
+            E ainda tem mais: as fibras sintéticas, como o poliéster, não desaparecem
+            quando descartamos as roupas. Elas se transformam em microplásticos que vão parar
+            nos oceanos, são ingeridos por peixes e entram na nossa própria cadeia alimentar.
+            Então, indiretamente, estamos comendo as consequências desse consumo
+            desenfreado.
+            A questão aqui é simples, mas poderosa: o que queremos para o nosso futuro?
+            Precisamos mesmo de tantas roupas novas a cada estação? Ou é possível escolher
+            com mais consciência, comprar menos e buscar peças que realmente durem? Cada
+            um de nós tem o poder de fazer a diferença. É a nossa chance de mudar o rumo das
+            coisas
+        </p>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1584.1955105164393!2d-70.09149874301413!3d-20.23493894780229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915215426eb9ae75%3A0xbb5867ab02cd19a1!2s Giant%20Pile%20of%20Unsold%20Clothing!5e1!3m2!1spt-BR!2sbr!4v1730406948670!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </figure>
+</div>
+    </main>
+    <footer class="pe">
+        <div class="rodape">
+            <ul class="foot">
+                <li>
+                    <h3 class="sobre">
+                        <a href="grupo.html" target="_blank" > Sobre</a>
+                    </h3>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script>
+    // Alterar visibilidade do conteúdo
+    const saibaMais = document.getElementById("saiba");
+    const esconder = document.getElementById("esconder");
+
+    saibaMais.addEventListener("click", () => {
+        if (esconder.style.display === "none" || !esconder.style.display) {
+            esconder.style.display = "block";
+            saibaMais.innerText = "Mostrar Menos";
+        } else {
+            esconder.style.display = "none";
+            saibaMais.innerText = "Saiba Mais";
+        }
+    });
+</script>
+
+    </html>

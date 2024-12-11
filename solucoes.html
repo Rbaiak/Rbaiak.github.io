@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <div class="logo_container">
+                <img class="logo" src="./assets/logo-removebg-preview.png" alt="Impacto da moda no meio ambiente">
+                <h1>As possibilidades</h1>
+            </div>
+            <h2>para uma solução sustentável</h2>
+        </div>
+            <div class="menus">
+                <nav>
+                    <ul class="lista">
+                        <li class="inicio">
+                            <a href="index.html">Início</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="impactos.html">Impactos Ambientais</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="ciclo de vida.html">Ciclo de Vida</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="solucoes.html">Soluções sustentáveis</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="calc.html">Calculadora</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="quiz.html">Quizz</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="avalie.html">Avalie-nos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main>
+        <div class="meio">
+        <p>Você já parou para pensar de onde vem a sua roupa e qual é o impacto que ela deixa no mundo?</p>
+            <button id="saiba">Saiba Mais</button>
+        </div>
+        <div class="hidden meio" id="esconder">
+        Muitas vezes, a moda parece ser só sobre estilo e tendências, mas ela tem um lado que nem sempre vemos: o impacto ambiental. E é aí que a sustentabilidade entra em cena. Imagine se as suas escolhas pudessem ajudar a transformar a moda em algo positivo para o planeta. A boa notícia é que isso não só é possível, como já está acontecendo.
+
+            Empresas estão adotando tecidos biodegradáveis e reciclados, reinventando processos para economizar água e usar energia limpa. Isso quer dizer que aquela camiseta que você veste pode ter sido feita com muito menos impacto e, quando descartada, não vai parar em um lixão, mas sim voltar para a natureza sem causar dano.
+
+            Mas, para que essa mudança cresça, é preciso que todos nós façamos parte dela. Que tal começar a olhar as etiquetas das suas roupas e escolher aquelas que mostram práticas sustentáveis? Lembre-se, cada compra que você faz tem poder. Ao apoiar marcas que cuidam do meio ambiente, você está dizendo ao mundo que a moda não precisa destruir para ser bonita.
+
+            O futuro pode ser diferente, e ele depende de nós. Podemos, juntos, transformar a moda em uma força para o bem, onde o estilo e a sustentabilidade caminhem de mãos dadas. Então, vamos vestir essa ideia? </p>
+
+            <img src="./assets/Soluções Sustentáveis na Moda.jpg" alt="" srcset="">
+        </div>
+        </main>
+
+    <footer class="pe">
+        <div class="rodape">
+            <ul class="foot">
+                <li>
+                    <h3 class="sobre">
+                        <a href="grupo.html" target="_blank" > Sobre</a>
+                    </h3>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+<script>
+    // Alterar visibilidade do conteúdo
+    const saibaMais = document.getElementById("saiba");
+    const esconder = document.getElementById("esconder");
+
+    saibaMais.addEventListener("click", () => {
+        if (esconder.style.display === "none" || !esconder.style.display) {
+            esconder.style.display = "block";
+            saibaMais.innerText = "Mostrar Menos";
+        } else {
+            esconder.style.display = "none";
+            saibaMais.innerText = "Saiba Mais";
+        }
+    });
+</script>
+</html>
+

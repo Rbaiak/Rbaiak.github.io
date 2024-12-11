@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça o Grupo</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="grupostyle.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="intro">
+        <div class="logo_container">
+            <img class="logo" src="./assets/logo-removebg-preview.png" alt="Impacto da moda no meio ambiente">
+            <h1>Sobre o Projeto</h1>
+        </div>
+    </div>
+            <p>Este trabalho foi desenvolvido como parte avaliativa da disciplina "Metodologias Digitais" </p>
+            <p>UTFPR em parceria com o IPB</p>
+
+            <div class="menus">
+                <nav>
+                    <ul  class="lista">
+                        <li  class="inicio">
+                            <a href="index.html">Início</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="impactos.html">Impactos Ambientais</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="ciclo de vida.html">Ciclo de Vida</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="solucoes.html">Soluções sustentáveis</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="calc.html">Calculadora</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="quiz.html">Quizz</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="avalie.html">Avalie-nos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <main>
+        <div class= "meio">
+            <h2>Sobre o projeto</h2>
+            <p>O site foi desenvolvido baseado no curriculo do estado do Paraná
+                com o objetivo de sensibilizar alunos do 9º ano
+                do ensino fundamental II,
+                , sobre os impactos ambientais gerados pela
+                indústria têxtil.
+                Este recurso educativo busca conectar os
+                conhecimentos científicos aos desafios
+                contemporâneos da sustentabilidade, promovendo
+                reflexões sobre o papel de cada indivíduo na
+                preservação do meio ambiente.</p>
+        <button id="saiba">Conheça o grupo</button>
+        </div>
+        <div class="meio hidden" id="esconder">
+
+
+        <div class="lista_participantes">
+            <ul>
+                <li>
+                     <p>Diego Nogueira Schemberger</p>
+                        <p>Professor de Filosofia e Educação Especial na Rede Estadual </p>
+                        <a href="http://lattes.cnpq.br/9959867863468497" target="_blank">Lattes</a>
+                </li>
+                <li>
+                    <p>Guiomar Abril</p>
+                        <p>- Licenciatura em Engenharia de  Telecomunicações e Informática (2020/2021) pelo Instituto Universitário de Contabilidade e Informática (IUCAI) </p>
+
+                </li>
+                <li>
+                    <p>Patricia Fernanda da Silva</p>
+                        <p>Possui graduação em Pedagogia pela Universidade Estadual de Ponta Grossa (2010).</p>
+                        <a href=" http://lattes.cnpq.br/3749930246905124" target="_blank">Lattes</a>
+                </li>
+                <li>
+                    <p>Rayane Spagnol </p>
+                        <p>Licenciatura Em Pedagogia, faculdade novo milênio, 2012.</p>
+
+                </li>
+                <li>
+                    <p>Roger José Vieira Baiak</p>
+                        <p>Possui graduação em Ciências Biológicas pela Universidade Estadual do Paraná (2022).</p>
+                        <a href="http://lattes.cnpq.br/9079264354344125" target="_blank">Lattes</a>
+                </li>
+                <li>
+                    <p>Thamires Pires de Oliveira</p>
+                        <p>Possui graduação em Licenciatura em Química pela Universidade Tecnológica Federal do Paraná - Câmpus Apucarana(2022).</p>
+                        <a href="http://lattes.cnpq.br/2875342471410446" target="_blank">Lattes</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    </main>
+    <footer class="pe">
+        <div class="rodape">
+            <ul class="foot">
+                <li>
+                    <h3 class="sobre">
+                        <a href="grupo.html" target="_blank" > Sobre</a>
+                    </h3>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script>
+    // Alterar visibilidade do conteúdo
+    const saibaMais = document.getElementById("saiba");
+    const esconder = document.getElementById("esconder");
+
+    saibaMais.addEventListener("click", () => {
+        if (esconder.style.display === "none" || !esconder.style.display) {
+            esconder.style.display = "block";
+            saibaMais.innerText = "Mostrar Menos";
+        } else {
+            esconder.style.display = "none";
+            saibaMais.innerText = "Saiba Mais";
+        }
+    });
+</script>
+</html>

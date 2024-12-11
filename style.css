@@ -1,0 +1,174 @@
+/* Estilo geral */
+body {
+    background-color: #16423C;
+    color: #C4DAD2;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo{
+    height: 12%;
+    width: 12%;
+}
+
+/* Introdução */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.intro h1,.intro h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.logo_container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Define um espaço consistente entre os elementos */
+    margin: 0; /* Remove margens adicionais */
+    padding: 0;
+}
+.logo {
+    max-width: 70px;
+    height: auto;
+    margin: 0; /* Remove margem da imagem */
+}
+
+
+/* Lista de menus */
+.lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #6A9C89;
+}
+
+.inicio {
+    margin: 20px;
+}
+
+li:hover {
+    transition: 0.5s;
+    background-color: antiquewhite;
+    border-radius: 30%;
+}
+
+/* Conteúdo principal */
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Imagens e mídias */
+.impactos1 {
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+}
+
+.mapa {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+    margin: 50px auto;
+}
+
+/* Botão Saiba Mais */
+#saiba {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#saiba:hover {
+    background-color: #45a049;
+}
+
+/* Elementos ocultos */
+.hidden {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Texto */
+p {
+    padding-left: 5px;
+    text-align: justify;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 5px;
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    background-color: #6A9C89;
+    justify-content: center;
+}
+
+.foot li {
+    margin-bottom: 5px;
+}
+
+.credit {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Outras listas */
+.lista_participantes {
+    margin: 10px;
+}
+
+/* Layouts responsivos */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .mapa {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .mapa {
+        height: 200px;
+    }
+}

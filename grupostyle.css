@@ -1,0 +1,92 @@
+body{
+    background-color: #16423C;
+    color: #C4DAD2;
+}
+
+header{
+
+    text-align: center;
+}
+
+.icone{
+    height: 15vh;
+    width: 15vw;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #6A9C89;
+    gap: 25px;
+
+    height: 60px;
+    align-items: center;
+}
+
+.menus{
+
+    padding: 10px;
+}
+.foot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    background-color: #6A9C89;
+    justify-content: center;
+}
+
+.foot li {
+    margin-bottom: 5px;
+}
+
+.credit {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Espaço acima do texto 'Desenvolvido por Rb' */
+}
+.meio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#saiba {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#saiba:hover {
+    background-color: #45a049;
+}
+.hidden{
+    display: none;
+}
+h1{
+    text-align: center;
+}
+.logo_container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Define um espaço consistente entre os elementos */
+    margin: 0; /* Remove margens adicionais */
+    padding: 0;
+}
+.logo {
+    max-width: 70px;
+    height: auto;
+    margin: 0; /* Remove margem da imagem */
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

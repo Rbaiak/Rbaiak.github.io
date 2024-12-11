@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo de vida</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <div class="logo_container">
+                <img class="logo" src="./assets/logo-removebg-preview.png" alt="Impacto da moda no meio ambiente">
+                <h1>O ciclo de vida das roupas</h1>
+            </div>
+            <h2>entenda o ciclo de produção ao descarte</h2>
+        </div>
+            <div class="menus">
+                <nav>
+                    <ul class="lista">
+                        <li class="inicio">
+                            <a href="index.html">Início</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="impactos.html">Impactos Ambientais</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="ciclo de vida.html">Ciclo de Vida</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="solucoes.html">Soluções sustentáveis</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="calc.html">Calculadora</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="quiz.html">Quizz</a>
+                        </li>
+                        <li class="inicio">
+                            <a href="avalie.html">Avalie-nos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main>
+        <div class="meio">
+        <p >O ciclo de vida do produto na indústria da moda é uma importante ferramenta para
+            identificar os impactos ambientais e sociais de uma roupa ao longo de todo seu ciclo,
+            desde a extração de matéria-prima até o descarte.</p>
+            <button id="saiba">Saiba Mais</button>
+        </div>
+        <div class="meio hidden" id="esconder">
+        <p>
+            Muitas vezes, ao comprar uma roupa, não consideramos todo o processo que envolve
+            sua produção. No entanto, desde a produção do algodão até a confecção e transporte da
+            roupa, existem diversos impactos negativos no meio ambiente, como o consumo de
+            água e energia, a poluição do ar e a geração de resíduos.
+            Por isso, é essencial que as empresas da indústria da moda adotem uma abordagem mais
+            sustentável ao longo de todo o ciclo de vida do produto. Isso significa buscar soluções
+            para minimizar os impactos negativos, como a redução do uso de recursos naturais, o
+            desenvolvimento de materiais mais sustentáveis e a implementação de processos de
+            produção mais eficientes.</p>
+            <img src="./assets/Ciclo de Vida das Roupas e Problemas do Fast Fashion.jpg" alt="" srcset="">
+        </div>
+    <footer class="pe">
+        <div class="rodape">
+            <ul class="foot">
+                <li>
+                    <h3 class="sobre">
+                        <a href="grupo.html" target="_blank" > Sobre</a>
+                    </h3>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+<script>
+    // Alterar visibilidade do conteúdo
+    const saibaMais = document.getElementById("saiba");
+    const esconder = document.getElementById("esconder");
+
+    saibaMais.addEventListener("click", () => {
+        if (esconder.style.display === "none" || !esconder.style.display) {
+            esconder.style.display = "block";
+            saibaMais.innerText = "Mostrar Menos";
+        } else {
+            esconder.style.display = "none";
+            saibaMais.innerText = "Saiba Mais";
+        }
+    });
+</script>
+</html>
+
